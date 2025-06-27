@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Create Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>Create Assistant</h1>
+<form method="post" enctype="multipart/form-data">
+  <p>Name: <input type="text" name="name" required></p>
+  <p>Description: <input type="text" name="description"></p>
+  <p>Knowledge:<br><textarea name="knowledge" rows="5" cols="60"></textarea></p>
+  <p>File: <input type="file" name="file"></p>
+  <p><button type="submit">Create</button></p>
+</form>
+<p><a href="/">Back to dashboard</a></p>
+</body>
+</html>
