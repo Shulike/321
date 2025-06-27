@@ -6,10 +6,11 @@
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+<p class="nav">Welcome, {{ username }} | <a href="/logout">Logout</a></p>
 <h1>Assistants Dashboard</h1>
 <p><a href="/create">Create New Assistant</a></p>
 <table>
-<tr><th>ID</th><th>Name</th><th>Description</th></tr>
+<tr><th>ID</th><th>Name</th><th>Description</th><th>Actions</th></tr>
 {{ rows }}
 </table>
 </body>

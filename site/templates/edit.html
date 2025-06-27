@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Edit Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<p class="nav">Welcome, {{ username }} | <a href="/logout">Logout</a></p>
+<h1>Edit Assistant</h1>
+<form method="post" enctype="multipart/form-data">
+  <p>Name: <input type="text" name="name" value="{{ name }}" required></p>
+  <p>Description: <input type="text" name="description" value="{{ description }}"></p>
+  <p>Knowledge:<br><textarea name="knowledge" rows="5" cols="60">{{ knowledge }}</textarea></p>
+  <p>Current file: {{ file_link }}</p>
+  <p>New file: <input type="file" name="file"></p>
+  <p><button type="submit">Save</button></p>
+</form>
+<p><a href="/assistant/{{ id }}">Cancel</a></p>
+</body>
+</html>
