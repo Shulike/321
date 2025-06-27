@@ -168,9 +168,9 @@ class Handler(server.SimpleHTTPRequestHandler):
         rows = []
         for a in assistants:
             actions = (
-                f"<a href='/assistant/{a['id']}'>View</a> | "
-                f"<a href='/edit/{a['id']}'>Edit</a> | "
-                f"<a href='/delete/{a['id']}'>Delete</a>"
+                f"<a href='/assistant/{a['id']}' class='btn btn-sm btn-outline-secondary me-1'>View</a>"
+                f"<a href='/edit/{a['id']}' class='btn btn-sm btn-outline-primary me-1'>Edit</a>"
+                f"<a href='/delete/{a['id']}' class='btn btn-sm btn-outline-danger'>Delete</a>"
             )
             row = (
                 f"<tr><td>{a['id']}</td>"
