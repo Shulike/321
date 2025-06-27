@@ -6,11 +6,16 @@
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+<p class="nav">Welcome, {{ username }} | <a href="/logout">Logout</a></p>
 <h1>{{ name }}</h1>
 <p><strong>Description:</strong> {{ description }}</p>
 <p><strong>Knowledge:</strong></p>
 <pre>{{ knowledge }}</pre>
 <p><strong>File:</strong> {{ file_link }}</p>
+<p>
+  <a href="/edit/{{ id }}">Edit</a> |
+  <a href="/delete/{{ id }}">Delete</a>
+</p>
 <p><a href="/">Back to dashboard</a></p>
 </body>
 </html>
